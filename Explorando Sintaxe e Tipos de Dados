@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string email;
+        string nomeUsuario;
+        string senha;
+
+        email = Console.ReadLine();
+        nomeUsuario = Console.ReadLine();
+        senha = Console.ReadLine();
+
+        RealizarRegistro(email, nomeUsuario, senha);
+    }
+
+    static void RealizarRegistro(string email, string nomeUsuario, string senha)
+    {
+        Console.WriteLine($"{nomeUsuario}, verifique o email: {email} para ativar.");
+    }
+}
